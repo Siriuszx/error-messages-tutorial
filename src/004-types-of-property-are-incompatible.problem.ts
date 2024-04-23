@@ -1,4 +1,13 @@
-const routingConfig = {
+type Route = {
+  path: string;
+  component: string;
+}
+
+type Config = {
+  routes: Route[];
+}
+
+const routingConfig: Config = {
   routes: [
     {
       path: "home",
